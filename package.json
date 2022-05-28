@@ -1,0 +1,25 @@
+{
+  "name": "tobdbtestserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node logicServer.js"
+  },
+  "author": "Stan",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "edit-json-file": "^1.7.0",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "google-auth-library": "^8.0.2",
+    "googleapis": "^100.0.0",
+    "helmet": "^5.0.2",
+    "mongoose": "^6.2.2",
+    "util": "^0.12.4"
+  }
+}

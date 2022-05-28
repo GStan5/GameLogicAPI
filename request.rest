@@ -1,0 +1,261 @@
+GET https://testserverapi.towersofbabel.xyz/stats
+
+###
+
+GET https://testserverapi.towersofbabel.xyz/access/0x0618Ddff1D8c8aA6FE6c6E4b662559628d073874
+
+###
+
+GET https://testserverapi.towersofbabel.xyz/login/0x
+
+###
+
+GET https://testserverapi.towersofbabel.xyz/editfile/0x/"0001Fishing Rod","0001Bluegill","0001Raw Bluegill","0001Raw Bluegill"/"7777rawbluegill","7777bluegill"/2/8.5/1:55:55:00
+
+###
+
+GET https://testserverapi.towersofbabel.xyz/logout/0x/"0001Fishing Rod","0001Bluegill","0001Raw Bluegill"/"5555rawbluegill","5555bluegill"/5.5/8.5/55:55:55:00
+
+###
+
+GET https://testserverapi.towersofbabel.xyz/stats
+
+###
+
+GET https://testserverapi.towersofbabel.xyz/stats
+
+//------------------------------------------localhost--------------------------------------------------
+@URI = http://localhost
+@body = "Data" : { 
+    
+}
+###                                     
+
+GET {{URI}}/health
+
+###
+
+GET {{URI}}/stats
+
+###                                                                 HiScores
+
+GET {{URI}}/hiscores
+content-type: application/json
+
+{
+    "data": {
+        "request": "SlayerSilver"
+    }
+}
+###                                                                 Login
+
+GET {{URI}}/api
+content-type: application/json
+
+{
+    "data": {
+        "function": "login",
+        "account": "0x"
+    }
+}
+###                                                                 Logout
+
+GET {{URI}}/api
+content-type: application/json
+
+{
+    "data": {
+        "function": "logout",
+        "account": "0x",
+        "slayersilver:": 0,
+        "inventory": ["x 1","x 1","x 1","x 1","x 1","x 1","x 1","fishingrod 1","fishingrod 1","fishingrod 1","x 1","rawbluegill 1","rawbluegill 1","fishingrod 1","x 1","fishingrod 1","rawbluegill 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1"],
+        "bank": ["bluegill 1000","fishingrod 103","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1"],
+        "x": 5,
+        "y": 10,
+        "totalTimePlayed": 100,
+        "cookitem": "rawbluegill 1",
+        "npcitem": "fishingrod 1",
+        "fishing": "rawbluegill 1"
+    }
+}
+
+###                                                                 Fishing
+
+GET {{URI}}/api
+content-type: application/json
+
+{
+    "data": {
+        "function": "fishing",
+        "account": "0x",
+        "slayersilver:": 0,
+        "inventory": ["x 1","x 1","x 1","x 1","x 1","x 1","x 1","fishingrod 1","fishingrod 1","fishingrod 1","x 1","rawbluegill 1","rawbluegill 1","fishingrod 1","x 1","fishingrod 1","rawbluegill 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1"],
+        "bank": ["bluegill 1000","fishingrod 103","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1"],
+        "x": 5,
+        "y": 10,
+        "totalTimePlayed": 100,
+        "cookitem": "rawbluegill 1",
+        "npcitem": "fishingrod 1",
+        "fishing": "rawbluegill 1"
+    }
+}
+
+###                                                                 HiScores
+
+GET {{URI}}/api
+content-type: application/json
+
+{
+    "data": {
+        "function": "getnpcitem",
+        "account": "0x",
+        "slayersilver:": 0,
+        "inventory": ["x 1","x 1","x 1","x 1","x 1","x 1","x 1","fishingrod 1","fishingrod 1","fishingrod 1","x 1","rawbluegill 1","rawbluegill 1","fishingrod 1","x 1","fishingrod 1","rawbluegill 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1"],
+        "bank": ["bluegill 1000","fishingrod 103","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1"],
+        "x": 5,
+        "y": 10,
+        "totalTimePlayed": 100,
+        "cookitem": "rawbluegill 1",
+        "npcitem": "fishingrod 1",
+        "fishing": "rawbluegill 1"
+    }
+}
+
+###                                                                 Cooking
+
+GET {{URI}}/api
+content-type: application/json
+
+{
+    "data": {
+        "function": "cooking",
+        "account": "0x",
+        "slayersilver:": 0,
+        "inventory": ["x 1","x 1","x 1","x 1","x 1","x 1","x 1","fishingrod 1","fishingrod 1","fishingrod 1","x 1","rawbluegill 1","rawbluegill 1","fishingrod 1","x 1","fishingrod 1","rawbluegill 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1"],
+        "bank": ["bluegill 1000","fishingrod 103","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1"],
+        "x": 5,
+        "y": 10,
+        "totalTimePlayed": 100,
+        "cookitem": "rawbluegill 1",
+        "npcitem": "fishingrod 1",
+        "fishing": "rawbluegill 1"
+    }
+}
+
+###                                                                 Drop Item
+
+GET {{URI}}/api
+content-type: application/json
+
+{
+    "data": {
+        "function": "dropitem",
+        "account": "0x",
+        "slayersilver:": 0,
+        "inventory": ["x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","fishingrod 1","fishingrod 1","x 1","rawbluegill 1","rawbluegill 1","fishingrod 1","x 1","fishingrod 1","rawbluegill 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1"],
+        "bank": ["bluegill 1000","fishingrod 103","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1"],
+        "x": 5,
+        "y": 10,
+        "totalTimePlayed": 100,
+        "cookitem": "rawbluegill 1",
+        "npcitem": "fishingrod 1",
+        "fishing": "rawbluegill 1"
+    }
+}
+
+###                                                                 Pick Up Item
+
+GET {{URI}}/api
+content-type: application/json
+
+{
+    "data": {
+        "function": "pickupitem",
+        "account": "0x",
+        "slayersilver:": 0,
+        "inventory": ["fishingrod 1","fishingrod 1","x 1","x 1","x 1","x 1","x 1","x 1","fishingrod 1","fishingrod 1","x 1","rawbluegill 1","rawbluegill 1","fishingrod 1","x 1","fishingrod 1","rawbluegill 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1"],
+        "bank": ["bluegill 1000","fishingrod 103","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1"],
+        "x": 5,
+        "y": 10,
+        "totalTimePlayed": 100,
+        "cookitem": "rawbluegill 1",
+        "npcitem": "fishingrod 1",
+        "fishing": "rawbluegill 1"
+    }
+}
+
+###                                                                 Update UI
+
+GET {{URI}}/api
+content-type: application/json
+
+{
+    "data": {
+        "function": "updateui",
+        "account": "0x",
+        "slayersilver:": 0,
+        "inventory": ["x 1","x 1","x 1","x 1","x 1","x 1","x 1","fishingrod 1","fishingrod 1","fishingrod 1","x 1","rawbluegill 1","rawbluegill 1","fishingrod 1","x 1","fishingrod 1","rawbluegill 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1"],
+        "bank": ["bluegill 1000","fishingrod 103","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1"],
+        "x": 5,
+        "y": 10,
+        "totalTimePlayed": 100,
+        "cookitem": "rawbluegill 1",
+        "npcitem": "fishingrod 1",
+        "fishing": "rawbluegill 1"
+    }
+}
+
+###                                                                 Bank 
+
+GET {{URI}}/api
+content-type: application/json
+
+{
+    "data": {
+        "function": "bank",
+        "account": "0x",
+        "slayersilver:": 0,
+        "inventory": ["x 1","x 1","x 1","x 1","x 1","x 1","x 1","fishingrod 1","fishingrod 1","fishingrod 1","x 1","rawbluegill 1","rawbluegill 1","fishingrod 1","x 1","fishingrod 1","rawbluegill 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1"],
+        "bank": ["bluegill 1000","fishingrod 103","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1"],
+        "x": 5,
+        "y": 10,
+        "totalTimePlayed": 100,
+        "cookitem": "rawbluegill 1",
+        "npcitem": "fishingrod 1",
+        "fishing": "rawbluegill 1"
+    }
+}
+
+###                                                                 Testing
+
+GET {{URI}}/api
+content-type: application/json
+
+{
+    "data": {
+        "function": "testing",
+        "account": "0x",
+        "slayersilver:": 0,
+        "inventory": ["x 1","x 1","x 1","x 1","x 1","x 1","x 1","fishingrod 1","fishingrod 1","fishingrod 1","x 1","rawbluegill 1","rawbluegill 1","fishingrod 1","x 1","fishingrod 1","rawbluegill 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1"],
+        "bank": ["bluegill 1000","fishingrod 103","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1","x 1"],
+        "x": 5,
+        "y": 10,
+        "totalTimePlayed": 100,
+        "cookitem": "rawbluegill 1",
+        "npcitem": "fishingrod 1",
+        "fishing": "rawbluegill 1"
+    }
+}
+
+###                                                                 Version
+
+GET {{URI}}/api
+content-type: application/json
+
+{
+    "data": {
+        "function": "version",
+        "version": "0.4"
+    }
+}
+###  
